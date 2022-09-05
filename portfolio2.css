@@ -1,0 +1,73 @@
+:root{
+  --color-base: #25262A;
+  --color-base2: #277F5A;
+  --color-base3: #52F4AB;
+  --color-base4: #161619;
+  --buton-color: #FEB724;
+}
+
+
+#footer {
+  background-color: #B0D1F7;
+  width: 60%;
+  height: 40px;
+}
+
+#copyright {
+  margin-top: 200px;
+}
+
+.navbar{
+  background: var(--color-base);
+}
+
+.nav-link {
+  color: white;
+}
+
+a:hover {
+  color: var(--color-base3);
+}
+
+.dropdown-item{
+  color: white;
+  background-color: var(--color-base);
+}
+
+.dropdown-item:hover{
+  color: var(--color-base3);
+  background-color: var(--color-base);
+}
+
+.dropdown-menu{
+  background-color: var(--color-base)
+}
+
+.navbar-brand, .navbar-brand:hover{
+  font-size: 30px;
+  color: var(--color-base3);
+}
+
+/*WAVES STYLE*/
+.custom-shape-divider-bottom-1662227330 {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1662227330 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 147px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.custom-shape-divider-bottom-1662227330 .shape-fill {
+  fill: var(--color-base2);
+}

@@ -1,0 +1,78 @@
+:root{
+    --color-base: #25262A;
+    --color-base2: #277F5A;
+    --color-base3: #52F4AB;
+    --color-base4: #161619;
+    --buton-color: #FEB724;
+  
+  }
+  
+body {
+    position: relative;
+  }
+
+  .jumbotron{
+    background-image: url("https://cdn.pixabay.com/photo/2020/02/26/08/59/fireworks-4881190_960_720.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+
+  .jumbo-text {
+    color: white;
+    font-weight: bold;
+  }
+
+  #my-app {
+    color: white;
+  }
+
+  .input-group {
+    width: 400px;
+  }
+
+  .btn-join-us {
+    margin: 45px auto;
+    width: 100px;
+    height: 40px;
+  }
+
+  #footer {
+    background-color: #B0D1F7;
+    width: 60%;
+    height: 250px;
+  }
+
+  #footer-image {
+    padding-top: 40px;
+  }
+
+  #copyright {
+    padding-top: 10px;
+  }
+
+  
+/*WAVES STYLE*/
+.custom-shape-divider-bottom-1662227330 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1662227330 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 147px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  
+  .custom-shape-divider-bottom-1662227330 .shape-fill {
+    fill: var(--color-base2);
+  }
+  

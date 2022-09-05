@@ -4,63 +4,134 @@
   --color-base3: #52F4AB;
   --color-base4: #161619;
   --buton-color: #FEB724;
-
 }
 
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: var(--color-base4);
+    color: #fff;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: var(--color-base4);
+    text-align: center;
+    height: 20px;
+}
+
+.header-text{
+  font-size: 40px;
+  color: #52F4AB;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: var(--color-base3);
+    background:var(--color-base);
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background:var(--color-base);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    color: white;
+    background:var(--color-base);
+}
+
+ul ul a:hover {
+  color: var(--color-base3)!important;
+  background:var(--color-base4)!important;
+}
+
+a[data-toggle="collapse"] {
   position: relative;
 }
 
-.jumbotron{
-  background-image: url("https://cdn.pixabay.com/photo/2020/02/26/08/59/fireworks-4881190_960_720.jpg");
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center;
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
-.jumbo-text {
+.header-text{
+  text-align: center;
+}
+
+h1{
   color: white;
-  font-weight: bold;
+  font-size: 100px;
 }
 
-#my-app {
-  color: white;
+.wrapper {
+  display: flex;
+  align-items: stretch;
 }
 
-.input-group {
-  width: 400px;
+#sidebar.active {
+  margin-left: -250px;
 }
-
-.btn-join-us {
-  margin: 45px auto;
-  width: 100px;
-  height: 40px;
-}
-
-#footer {
-  background-color: #B0D1F7;
-  width: 60%;
-  height: 250px;
-}
-
-#footer-image {
-  padding-top: 40px;
-}
-
-#copyright {
-  padding-top: 10px;
-}
-
 
 /*WAVES STYLE*/
 .custom-shape-divider-bottom-1662227330 {
   position: absolute;
-  bottom: 0;
+  bottom: 90px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+}
+
+.btn{
+  background-color: var(--color-base);
+  color: var(--color-base3);
+}
+
+.btn:hover{
+  background-color: var(--color-base);
+  color: var(--color-base3);
 }
 
 .custom-shape-divider-bottom-1662227330 svg {
@@ -72,6 +143,16 @@ body {
   left: 50%;
 }
 
+
 .custom-shape-divider-bottom-1662227330 .shape-fill {
   fill: var(--color-base2);
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
 }
