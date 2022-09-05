@@ -21,6 +21,10 @@ p {
     color: #999;
 }
 
+.header-container{
+  text-align: center;
+}
+
 a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
@@ -146,7 +150,7 @@ h1{
 
 
 .menu-btn{
-  background-color: var(--color-base);
+  background-color: var(--color-base4);
   color: var(--color-base3);
 }
 
@@ -222,8 +226,8 @@ h2{
 #johnny{
   font-family: 'Montserrat',Serif;
   color: var(--color-base2);
-  font-size: 100px;
-  font-weight:bolder;
+  font-size: 110px;
+  font-weight:900;
 }
 
 #jumbotron{
