@@ -150,7 +150,7 @@ h1{
 
 
 .menu-btn{
-  background-color: var(--color-base4);
+  background-color: var(--color-base);
   color: var(--color-base3);
 }
 
@@ -236,3 +236,6 @@ h2{
   background: var(--color-base);
 }
 
+#copyright{
+  color: white;
+}
