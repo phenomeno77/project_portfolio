@@ -3,6 +3,7 @@
   --color-base2: #277F5A;
   --color-base3: #52F4AB;
   --color-base4: #161619;
+  --color-base5: rgb(172, 172, 172);
   --buton-color: #FEB724;
 }
 
@@ -21,8 +22,14 @@ p {
   color: black;
 }
 
-h2{
+#header-container h2{
   text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+#header-container{
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 a, a:hover, a:focus {
@@ -193,6 +200,7 @@ ul ul a:hover {
   width: 100%;
   overflow: hidden;
   transform: rotate(180deg);
+  margin-top: 15px;
 }
 
 .cnt svg {
@@ -202,11 +210,12 @@ ul ul a:hover {
   height: 147px;
   transform: translateX(-50%);
   left: 50%;
+
 }
 
 
 .cnt .shape-fill {
-  fill: var(--color-base2);
+  fill: var(--color-base3);
 }
 
 .menu-btn{
@@ -273,7 +282,7 @@ ul ul a:hover {
   width:  100%;
 }
 
-#section{
+.section{
   width: 300px; 
   height: 20px; 
   padding: 0 0 27px 0; 
@@ -287,5 +296,16 @@ ul ul a:hover {
   font-size: 35px; 
   background-color: var(--color-base); 
   padding: 0 10px;
-  
+}
+
+#section-header h2{
+  color: white;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#section-header p{
+  color: var(--color-base5);
+  text-align: left;
+  padding-left: 30px;
 }
