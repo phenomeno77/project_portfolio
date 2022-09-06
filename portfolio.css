@@ -12,27 +12,33 @@ body {
   background: var(--color-base);
 }
 
-
-
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
   color: black;
 }
 
-#header-container h2{
+#header-container{
+ 
+}
+
+.cc p{
   text-align: center;
   padding: 10px 0 10px 0;
+  color: white;
+  font-family: 'Montserrat',Serif;
+  width: 100%;
 }
 
-#header-container{
-  min-height: 100vh;
-  min-width: 100%;
+#johnny{
+  color: var(--color-base2);
 }
 
-
+.jumbotron{
+  background: var(--color-base);
+}
 
 a, a:hover, a:focus {
   color: inherit;
@@ -182,7 +188,7 @@ ul ul a:hover {
 
 #content {
   width: 100%;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   min-height: 100vh;
   transition: all 0.3s;
   position: absolute;
@@ -252,48 +258,13 @@ ul ul a:hover {
   transform: scale(1.15); 
 }
 
-
-#hello-world{
-  font-family: 'Montserrat',Serif;
-  color: white;
-  font-size: 78px;
-  font-weight:600;
-  width:  100%;
-}
-
-#iam{
-  font-family: 'Montserrat',Serif;
-  color: white;
-  font-size: 60px;
-  font-weight: 600;
-  width:  100%;
-}
-
-
-#iam2{
-  font-family: 'Montserrat',Serif;
-  color: white;
-  font-size: 70px;
-  font-weight: 700;
-  width:  100%;
-}
-
-
-#johnny{
-  font-family: 'Montserrat',Serif;
-  color: var(--color-base2);
-  font-size: 100px;
-  font-weight:bolder;
-  width:  100%;
-}
-
 .section{
-  width: 300px; 
+  width: 100%; 
   height: 20px; 
   padding: 0 0 27px 0; 
   margin: 50px 0 50px 0;
   border-bottom: 1px solid var(--color-base3); 
-  text-align: right;
+  text-align: center;
 }
 
 #span-section{
