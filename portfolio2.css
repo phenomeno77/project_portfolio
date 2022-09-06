@@ -12,6 +12,7 @@ body {
   background: var(--color-base);
 }
 
+
 .cc p{
   text-align: center;
   padding: 10px 0 10px 0;
@@ -98,6 +99,8 @@ height: 100vh;
   background: var(--color-base4);
   color: #fff;
   transition: all 0.3s;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 #sidebar.active {
@@ -214,6 +217,10 @@ ul ul a:hover {
   transition: all 0.3s;
 }
 
+.content-header{
+  text-align: center;
+}
+
 /* ---------------------------------------------------
   MEDIAQUERIES
 ----------------------------------------------------- */
@@ -225,6 +232,8 @@ ul ul a:hover {
       text-align: center;
       margin-left: -105px !important;
   }
+
+
   .dropdown-toggle::after {
       top: auto;
       bottom: 10px;
@@ -265,4 +274,64 @@ ul ul a:hover {
   #sidebarCollapse span {
       display: none;
   }
+}
+
+
+.menu-btn{
+  background-color: var(--color-base);
+  color: var(--color-base3);
+  z-index: 997;
+}
+
+.menu-btn:hover{
+  background-color: var(--color-base);
+  color: var(--color-base3);
+}
+
+.say-hello-btn{
+  margin-top: 10px;
+  width: 170px;
+  height: 60px;
+  border-radius: 10%;
+  transition: all .2s ease-in-out; 
+}
+
+.btn-warning span{
+  font-family: 'Montserrat',Serif;
+  color: #161619;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.btn-warning:hover{
+  transform: scale(1.15); 
+}
+
+
+.section{
+  width: 100%; 
+  height: 20px; 
+  padding: 0 0 27px 0; 
+  margin: 50px 0 50px 0;
+  border-bottom: 1px solid var(--color-base3); 
+  text-align: center;
+}
+
+#span-section{
+  color: var(--color-base3);
+  font-size: 35px; 
+  background-color: var(--color-base); 
+  padding: 0 10px;
+}
+
+#section-header h2{
+  color: white;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#section-header p{
+  color: var(--color-base5);
+  text-align: left;
+  padding-left: 30px;
 }
