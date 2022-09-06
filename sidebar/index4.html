@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
-
+    <title>Johnny's Portfolio | WebDev</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Montserrat&effect=fire|neon|outline|emboss|shadow-multiple">
+   
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -21,136 +22,137 @@
 
 <body>
 
-    <div class="wrapper">
-        <!-- Sidebar  -->
+    <!--NAVIGATION MENU BAR-->
+    <div class="wrapper" id="wrapper">
+
+        <!-- Sidebar -->
         <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-                <strong>BS</strong>
-            </div>
-
+          <div class="sidebar-header">
+            <a href="#wrapper" class="header-text font-effect-shadow-multiple">
+              JD
+            </a>
+          </div>
             <ul class="list-unstyled components">
+              <img src="/project_portfolio/profil.jpg" class="profil img-fluid rounded-circle my-5 p-2 d-md-block"/>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
+                  <a href="#wrapper">
+                    <i class="fas fa-home"></i>
+                    Home
+                  </a>
                 </li>
+                <li>
+                    <a href="#about-me">
+                      <i class="fas fa-user-secret"></i>
+                      About Me
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-screwdriver"></i>
+                            Skills</a>
+              </li>
+                <li>
+                  <a href="#portfolioSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-briefcase"></i>
+                    Portfolio</a>
+                  
+                  <ul class="collapse list-unstyled" id="portfolioSubmenu">
+                      <li>
+                          <a href="#">Work 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Work 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Work 3</a>
+                      </li>
+                  </ul>
+                </li>
+                
                 <li>
                     <a href="#">
-                        <i class="fas fa-briefcase"></i>
-                        About
-                    </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                      <i class="fas fa-paper-plane"></i>
+                      Contact</a>
                 </li>
             </ul>
         </nav>
-
-        <!-- Page Content  -->
+        
+        <!-- Page Content -->
         <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
+          <div id="header-container">
+            <!--MENU BUTTON-->
+            <button type="button" id="sidebarCollapse" class="btn menu-btn">
+              <i class="fas fa-align-left"></i>
+              <span>Menu</span>
+            </button>
+  
+            <!--JUMBOTRON-->
+              <div  class="cc container-fluid">
+              <p class="display-3" >Hello World!</p>
+              <p class="display-4" >I'm</p>
+              <p class="display-2" id="johnny">Johnny</p>
+              <p class="display-4">I'am a<br>Software <br>&amp; <br>Web Developer</p>
+              </div>
+  
+              <div class="container-fluid content-header">
+                    <button type="button" class="btn btn-warning say-hello-btn">
+                    <span>Say Hello</span> 
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                        </ul>
-                    </div>
+                </div>  
+              
+                  
+               </div>
+               <!--ABOUT ME SECTION-->
+               <div class="container-fluid section" id="about-me">
+                  <span id="span-section">About Me</span>
+              </div>
+  
+              <div id="section-header">
+              <h2 >Some Words About Me</h2>
+              <p>
+                My name is Ioannis Deligiannidis. My friends also call me "Johnny"  and i am a passionated programmer. I was born in Greece and now being based since 10+ years in Austria.
+                I wrote my first "Hello World" program in 2020 at the university of Innsbruck, where i started studying Computer Science IT.
+                I began with learning more about the Front-End and the Web Development in the summer of 2022. 
+                I am a very positive and well organized person. I like to work in team with other people and i love learning new things every day.
+              </p>
+              </div>
+              
+              
+              <div id="section-header">
+                <h2 >Some Words About Me</h2>
+                <p>
+                  My name is Ioannis Deligiannidis. My friends also call me "Johnny"  and i am a passionated programmer. I was born in Greece and now being based since 10+ years in Austria.
+                  I wrote my first "Hello World" program in 2020 at the university of Innsbruck, where i started studying Computer Science IT.
+                  I began with learning more about the Front-End and the Web Development in the summer of 2022. 
+                  I am a very positive and well organized person. I like to work in team with other people and i love learning new things every day.
+                </p>
                 </div>
-            </nav>
-
-            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </div>
+  
+                <div id="section-header">
+                  <h2 >Some Words About Me</h2>
+                  <p>
+                    My name is Ioannis Deligiannidis. My friends also call me "Johnny"  and i am a passionated programmer. I was born in Greece and now being based since 10+ years in Austria.
+                    I wrote my first "Hello World" program in 2020 at the university of Innsbruck, where i started studying Computer Science IT.
+                    I began with learning more about the Front-End and the Web Development in the summer of 2022. 
+                    I am a very positive and well organized person. I like to work in team with other people and i love learning new things every day.
+                  </p>
+                  </div>
+  
+              <!--FOOTER-->
+              <div class="container" id="footer">
+                <div class="text-center p-3" id="copyright">
+                 © 2022 Copyright by: Phenomeno
+                 <br> 
+                 This Website done with Bootstrap, JS, HTML and CSS
+                </div>
+              </div>   
+        </div> <!--CONTENT-->
+      </div> <!--WRAPPER-->
+  
+      
+          <!-- Dark Overlay element -->
+          <div class="overlay"></div>
+  
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -160,12 +162,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+       
+
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
+                    $('#sidebar').toggleClass('active');
+                });
+    });
+        </script>
 </body>
 
 </html>
