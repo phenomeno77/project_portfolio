@@ -7,10 +7,9 @@
   --buton-color: #FEB724;
 }
 
-body,html {
+body {
   font-family: 'Poppins', sans-serif;
   background: var(--color-base);
-  height: 100%;
 }
 
 p {
@@ -21,8 +20,18 @@ p {
   color: black;
 }
 
+.cc p{
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-size: 50px;
+  color: white;
+  font-family: 'Montserrat',Serif;
+  width: 100%;
+}
+
 #johnny{
   color: var(--color-base3);
+
 }
 
 
@@ -38,10 +47,10 @@ a, a:hover, a:focus {
 
 #sidebar {
   width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100vh;
+  position: fixed;
+  top: 0;
+  
+  height: 100vh;
   z-index: 999;
   background: var(--color-base4);
   text-align: center;
@@ -51,9 +60,6 @@ a, a:hover, a:focus {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-#sidebar.active {
-  left: 0;
-}
 
 #dismiss {
   width: 35px;
@@ -63,7 +69,7 @@ a, a:hover, a:focus {
   background: var(--color-base);
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -86,6 +92,7 @@ a, a:hover, a:focus {
 #sidebar .sidebar-header {
 padding: 20px;
 background: var(--color-base4);
+height: 20px;
 }
 
 .overlay {
@@ -262,58 +269,4 @@ ul ul a:hover {
   color: var(--color-base5);
   text-align: left;
   padding-left: 30px;
-}
-
-.profil{
-  border-radius: 50%;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.sidebar-header{
-  width: 100% !important;
-  height: 100% !important;
-}
-
-@media (max-width: 768px) {
-  .cc p{
-    font-size: 15vw !important;
-    white-space: normal !important;
-
-  }
-  .say-hello-btn, .btn-warning span{
-    font-size: 15vw !important;
-    font-size: 4vh !important;
-    text-align: center !important;
-  }
-}
-
-.cc p{
-  text-align: center;
-  font-size: 70px;
-  color: white;
-  font-family: 'Montserrat',Serif;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: 
-    typing 3s steps(1500, end),
-    blink-caret 3s step-end infinite;
-}
-
-.cc{
-  height: 100%;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0}
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
 }
