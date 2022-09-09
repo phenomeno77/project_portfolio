@@ -44,39 +44,29 @@
 
           <ul class="list-unstyled components">
             <li class="active">
-                <a href="#wrapper">Home</a>
-              </li>
-              <li>
-                  <a href="#about-me">About Me</a>
-              </li>
-              <li>
-                <a href="#">Skills</a>
+                <a href="#header-container">Home</a>
             </li>
-              <li>
-                <a href="#portfolioSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Portfolio</a>
-                <ul class="collapse list-unstyled" id="portfolioSubmenu">
-                    <li>
-                        <a href="#">Work 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Work 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Work 3</a>
-                    </li>
-                </ul>
-              </li>
-              
-              <li>
-                  <a href="#">Contact</a>
-              </li>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
           </ul>
       </nav>
       
       <!-- Page Content -->
       <div id="content">
-        <div id="header-container">
           <!--MENU BUTTON-->
+
+          <div id="header-container">
+
           <button type="button" id="sidebarCollapse" class="btn menu-btn">
             <i class="fas fa-align-left"></i>
             <span>Menu</span>
@@ -88,22 +78,20 @@
             <div class="container-fluid">
                 <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Hi there! It's me <span id="johnny"> Johnny</span></h2>
+                    <h2 class="hero_title">Hi there! It's me <span id="johnny" class="font-effect-shadow-multiple"> Johnny</span></h2>
                     <p class="hero_desc">I am a Software & Web Developer</p>
-                </div>
-                </div>
-                
-                <div>
-                  <button type="button" class="btn btn-warning say-hello-btn">
-                  <span>Say Hello</span> 
-                  </button>
+                    <button type="button" onclick="scrollToFunction()" class="btn btn-warning say-hello-btn">
+                      <span>
+                        Say Hello
+                      </span> 
+                      </button>
+                  </div>
                 </div>
             </div>
-            
-            
         </section>
+        </div> 
 
-
+       
       <!--ABOUT ME SECTION-->
       <section id="about">
         <div class="container-fluid">
@@ -252,38 +240,44 @@
 
 <!-- contact section-->
 <section id="contact" >
-  <div class="container-fluid section" id="about-me">
+  <div class="container-fluid section" id="contact">
     <span id="span-section">Contact Me</span>
-</div>
+  </div>
+  
   <div class="container mt-3 contactContent" >
-      <div class="row mt-4 ">
-          <div class="col-12">
-              <!-- form fields -->
-              <form class="w-50 float-left" >
-                  <input type="text" class="form-control form-control-lg" placeholder="Name">
-                  <input type="email" class="form-control mt-3" placeholder="Email">
-                  <input type="text" class="form-control mt-3" placeholder="Subject">
-                  <div class="mb-3 mt-3">
-                      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                  </div>
-              </form>
-              <form class="w-50 float-right" >
-                <input type="text" class="form-control form-control-lg" placeholder="Name">
-                <input type="email" class="form-control mt-3" placeholder="Email">
-                <input type="text" class="form-control mt-3" placeholder="Subject">
-                <div class="mb-3 mt-3">
-                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                </div>
-            </form>
-            <button type="button" class="btn btn-success mt-3">Contact Me</button>
 
-          </div>
-          
-
+    <h2 class="contact_title">Get In Touch With Me</h2>
+    
+    <div class="row mail-form">
+      <div class="col-12">
+          <!-- form fields -->
+          <form >
+              <input type="text" class="form-control form-control-lg" placeholder="Name">
+              <input type="email" class="form-control mt-3" placeholder="Email">
+              <input type="text" class="form-control mt-3" placeholder="Subject">
+              <div class="mb-3 mt-3">
+                  <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+              </div>
+          </form>
       </div>
   </div>
+  
+    <div class="mail-wrapper">
+
+      <div class="mail-icon-container">
+        <i class="fas fa-envelope mail-icon"></i>
+      </div> 
+
+      <div class="mail-text text-left">
+        <h2 style="color:white;">Email </h2>
+        <p>ioan.deligiannidis@gmail.com</p>
+      </div>
+    </div>  
+   
+    
+      <button type="button" class="btn btn-success mt-3 contact-btn">Contact Me</button>
+  </div>
 </section>
-</div>
 
       <section>
             <!--FOOTER-->
@@ -294,8 +288,10 @@
                This Website done with Bootstrap, JS, HTML and CSS
               </div>
             </div>   
-      </div> <!--CONTENT-->
     </section>
+
+  </div> <!--CONTENT-->
+
         <!-- Dark Overlay element -->
         <div class="overlay"></div>
 

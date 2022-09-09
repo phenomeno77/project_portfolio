@@ -15,4 +15,10 @@ $(document).ready(function () {
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         $('#sidebar').show('slow');
     });
+
 });
+
+function scrollToFunction(){
+    document.getElementById('contact').scrollIntoView();
+}
+
