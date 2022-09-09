@@ -170,11 +170,12 @@ a[data-toggle="collapse"] {
 }
 
 .menu-btn{
-  background-color: rgb(82, 244, 171,0);
+  background-color: rgb(172, 172, 172,.1);;
   color: rgb(82, 244, 171,1);
   position: fixed;
-  z-index: 997;
+  z-index: 999;
   font-size: 30px;
+
 }
 
 .menu-btn:hover{
@@ -348,10 +349,11 @@ a[data-toggle="collapse"] {
 
 /* hero background image */
 .bgimage {
-  height:100vh;
+  height: 95vh;
   background: url('/project_portfolio/portfolio2/assets/photos/bg-2.jpg');
   background-size:cover;
   position:relative;
+  margin-top: 50px;
 }
 /* text css above hero image*/
 .hero_title {
@@ -422,4 +424,7 @@ a[data-toggle="collapse"] {
 
 .mail-form{
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
