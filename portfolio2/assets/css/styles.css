@@ -349,7 +349,7 @@ a[data-toggle="collapse"] {
 /* hero background image */
 .bgimage {
   height:100vh;
-  background: url('/project_portfolio/portfolio2/assets/photos/bg-2.jpg');
+  background: url('/portfolio2/assets/photos/bg-2.jpg');
   background-size:cover;
   position:relative;
 }
