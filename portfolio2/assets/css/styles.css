@@ -429,3 +429,16 @@ a[data-toggle="collapse"] {
   justify-content: center;
 }
 
+.card:hover{
+  color: var(--color-base2);
+  border: var(--color-base2) 2px solid;
+}
+
+.card{
+  height: 100%;
+  
+}
+
+.event-button{
+  padding-top: 60px;
+}
