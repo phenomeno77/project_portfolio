@@ -173,7 +173,7 @@ a[data-toggle="collapse"] {
   background-color: rgb(172, 172, 172,.1);;
   color: rgb(82, 244, 171,1);
   position: fixed;
-  z-index: 999;
+  z-index: 991;
   font-size: 30px;
 
 }
@@ -428,3 +428,4 @@ a[data-toggle="collapse"] {
   align-items: center;
   justify-content: center;
 }
+
