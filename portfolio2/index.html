@@ -94,7 +94,7 @@
        
       <!--ABOUT ME SECTION-->
       <section id="about">
-        <div class="container-fluid">
+        <div class="container-fluid about-container">
             <div class="section" id="about-me">
               <span id="span-section">About Me</span>
           </div>
@@ -105,25 +105,24 @@
                 </div>
 
                 <div class="col-lg-8 pt-5">
-                  <h2 style="color: white;
-                  text-align: left;
-                  ">Some Words About Me</h2> 
-                  <p>
-                    My name is Ioannis Deligiannidis. My friends also call me "Johnny"  and i am a passionated programmer.
-                    I was born in Greece and now being based since 10+ years in Austria.
-                    I wrote my first "Hello World" program in 2020 at the university of Innsbruck, where i started studying Computer Science IT.
-                    I began with learning more about the Front-End and the Web Development in the summer of 2022. 
-                    I am a very positive and well organized person. I like to work in team with other people and i love learning new things every day.
-                  </p>
-                   
+                  <h2>Some Words About Me</h2> 
+                    <div class="container-fluid about-text">
+                    <h4>Who am I: <span> My name is Ioannis, but my friends also call me "Johnny". I study Computer Science and programming is my passion</span></h4>
+                    <hr>
+                    <h4>Where do I come from:<span> I was born in Greece and I live since 10+ years in Austria.</span></h4>
+                    <hr>
+                    <h4>Pros: <span> I am a very positive, an well organized person and I like to work in team with other people. At work i always give my 100% and giving up is not my thing!</span></h4>
+                    <hr>
+                  </div>
                 </div>
             </div>
+          </div>
     </section>
 
              <!--SKILLS SECTION-->
              <!-- services section-->
     <section id="skills">
-      <div class="container-fluid">
+      <div class="container-fluid skills-container">
         <div class="section" id="skills">
           <span id="span-section">Skills</span>
       </div>
@@ -134,16 +133,17 @@
               text-align: left;
               ">My Skills</h2> 
               <p>
-                My journey began in 2021 where i start designing the software architecture and implementing the coding part for a team project. That was the first Web Application i’ve build from scratch. During that time i’ve done work in the Back-End, as well as in the Front-End part.
-                I like to create responsive, fast and user friendly web products with the help of HTML, CSS, JS. I also love to work with WordPress, when it comes to a full-stack development but not only!
-                For a backend part i am using Java to build REST-Api’s, Services and to configure the connection to a database. If not a CMS, then for an Web Application i like to work with the help of Spring-Boot Application.
-                Extras: MySQL, Algorithms and Data Structures  
+                I like to create responsive, fast and user friendly web products by using HTML, CSS, JS and jQuery. I do also like to work with WordPress, when it comes to a full-stack development but not only!
+                For a backend part I have a lot of experience with Java, when I have to build REST-Api’s, Services and to configure the connection to a database if required. If not a CMS, then for an Web Application I like to work with Java and the Spring-Boot Application.
+                <br>
+                Extra Skills: MySQL, knowledge about Algorithms and Data Structures
               </p>
             </div>
             <div class="col-lg-4">
               <img src="./assets/photos/skills-2.jpg" class= "imageAboutPage" alt="">
           </div>
         </div> 
+      </div>
   </section>
              
     <!--PORTFOLIO ME SECTION-->
@@ -152,6 +152,7 @@
   </div>
 
   <section id="portfolio">
+    <div class="container-fluid portfolio-container">
     <div class="container mt-3">
         <h1 class="text-center" style="color: white;
         text-align: left;">My Work</h1>
@@ -181,7 +182,7 @@
                 </div>
             </div>
 </div>
-
+</div>
 </section>
 
 <!-- contact section-->
@@ -197,14 +198,20 @@
     <div class="row mail-form">
       <div class="col-12">
           <!-- form fields -->
-          <form >
-              <input type="text" class="form-control form-control-lg" placeholder="Name">
-              <input type="email" class="form-control mt-3" placeholder="Email">
-              <input type="text" class="form-control mt-3" placeholder="Subject">
-              <div class="mb-3 mt-3">
-                  <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-              </div>
-          </form>
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="/project_portfolio/portfolio2/contact-form-process.php">
+        
+            <div class="fcf-form-group">
+                    <input placeholder="Name" type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+    
+            <div class="fcf-form-group">
+                    <input placeholder="Email" type="email" id="Email" name="Email" class="fcf-form-control" required>   
+            </div>
+            <div class="fcf-form-group">
+                    <textarea placeholder="Your Message" id="Message" name="qw" class="fcf-form-control" rows="6" maxlength="3000" required></textarea> 
+            </div>
+              <button type="submit" class="btn btn-success mt-3 contact-btn">Contact Me</button>
+        </form>
       </div>
   </div>
   
@@ -221,9 +228,10 @@
     </div>  
    
     
-      <button type="button" class="btn btn-success mt-3 contact-btn">Contact Me</button>
+     
   </div>
 </section>
+
 
       <section>
             <!--FOOTER-->
