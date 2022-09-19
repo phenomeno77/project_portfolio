@@ -13,6 +13,7 @@ body,html {
   height: 100%;
 }
 
+
 p{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
@@ -49,6 +50,7 @@ a, a:hover, a:focus {
   transition: all 0.3s;
   overflow-y: scroll;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  padding-left: 0;
 }
 
 #sidebar.active {
@@ -82,10 +84,12 @@ a, a:hover, a:focus {
   width: 100%;
 }
 
-#sidebar .sidebar-header {
-padding: 50px 0 0 0;
-background: var(--color-base4);
-}
+#sidebar .sidebar-header{
+  padding: 50px 0 0 0;
+  background: var(--color-base4);
+  text-align: center;
+  }
+
 
 .overlay {
   display: none;
@@ -97,6 +101,7 @@ background: var(--color-base4);
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+
 .overlay.active {
   display: block;
   opacity: 1;
@@ -122,7 +127,7 @@ background: var(--color-base4);
   display: block;
 }
 
-#sidebar ul li a:hover {
+#sidebar ul li a:hover  {
   color: var(--color-base3);
   background:var(--color-base);
 }
@@ -297,6 +302,8 @@ a[data-toggle="collapse"] {
     font-size: 100%;
   }
 
+
+
   .hero_title{
     font-size: 2.7em !important;
   }
@@ -316,20 +323,6 @@ a[data-toggle="collapse"] {
   }
 }
 
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0}
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
-}
-
-
 #copyright{
   color: rgba(255, 255, 255, 0.5);
 }
@@ -337,7 +330,7 @@ a[data-toggle="collapse"] {
 /* hero background image */
 .bgimage {
   height: 95vh;
-  background: url('/project_portfolio/portfolio2/assets/photos/bg-2.jpg');
+  background: url('/project_portfolio/portfolio/assets/photos/bg-2.jpg');
   background-size:cover;
   position:relative;
   margin-top: 50px;
