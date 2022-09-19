@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">
+    Thank you for taking the time to help us improve the platform
+  </p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input placeholder="Max Musterman" required id="name" name="name" type="text" required /></label>
+      <label id="email-label" for="email">Email <input placeholder="example@mail.com" required id="email" name="email" type="email" required /></label>
+      <label id="number-label" for="age">Age <input placeholder="0 - 120" id="number" type="number" name="age" min="13" max="120" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="radio-button"> First radio
+        <input type="radio" value="first-radio" name="radio-button">
+      </label>
+      <label for="radio-button"> Second radio
+        <input type="radio" value="second-radio" name="radio-button">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="check-box" name="check-box"> Choose many
+        <input id="check-box" value="1" type="checkbox" name="check-box">
+        <input id="check-box" value="2" type="checkbox" name="check-box">
+        <input id="check-box" value="3" type="checkbox" name="check-box">
+
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Please select an option:
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+      <label for="comment-area"> Your comments here
+        <textarea id="comment-area" name="comment-area" rows="5" cols="12"></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+  </body>
+
+</html>
