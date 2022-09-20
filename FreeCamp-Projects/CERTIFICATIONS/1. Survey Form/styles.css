@@ -19,7 +19,7 @@ form{
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-    height: 550px;
+    height: 630px;
 }       
 
 fieldset {
@@ -43,6 +43,11 @@ select {
   min-height: 2em;
 }
 
+.first-fieldset input{
+  margin-top: 5px;
+  width: 100%;
+  height: 20px;
+}
 
 input[type="submit"] {
     display: block;
@@ -51,8 +56,13 @@ input[type="submit"] {
     height: 2em;
     font-size: 1.1rem;
     background-color: #3b3b4f;
-    border-color: white;
+    border:1px solid #3b3b4f;
     min-width: 300px;
+  }
+
+  input[type="submit"]:hover{
+    background-color: whitesmoke;
+    color: green;
   }
   
   input[type="file"] {
