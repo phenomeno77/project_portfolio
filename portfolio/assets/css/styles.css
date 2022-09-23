@@ -7,6 +7,13 @@
   --buton-color: #FEB724;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+
 body,html {
   font-family: 'Poppins', sans-serif;
   background: var(--color-base);
@@ -330,7 +337,7 @@ a[data-toggle="collapse"] {
 /* hero background image */
 .bgimage {
   height: 95vh;
-  background: url('/project_portfolio/portfolio/assets/photos/bg-2.jpg');
+  background: url('/portfolio/assets/photos/bg-2.jpg');
   background-size:cover;
   position:relative;
   margin-top: 50px;
