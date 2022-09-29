@@ -1,0 +1,47 @@
+body{
+    background-color: wheat;
+    z-index: -1;
+}
+
+.first{
+    width:500px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.second{
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+
+}
+
+.third{
+    width: 200px;
+    height:100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+
+}
+
+
+.fourth{
+    width: 100px;
+    height:50px;
+    background-color: black;
+    border: 3px solid white;
+
+}
